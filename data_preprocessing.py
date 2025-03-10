@@ -52,7 +52,7 @@ class TrafficPreprocessor:
             pd.DataFrame: DataFrame with basic features
         """
         logger.info("Extracting basic features from packets")
-        data = []
+        data =
         
         for i, packet in enumerate(packets):
             try:

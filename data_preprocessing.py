@@ -42,20 +42,20 @@ class TrafficPreprocessor:
             logger.error(f"Invalid CIDR notation: {e}")
             
     def extract_basic_features(self, packets):
-        """
-        Extract basic features from packets.
-        
-        Args:
-            packets (list): List of packet objects from pyshark
-            
-        Returns:
-            pd.DataFrame: DataFrame with basic features
-        """
-        logger.info("Extracting basic features from packets")
-        data =
-        
-        for i, packet in enumerate(packets):
-            try:
+    """
+    Extract basic features from packets.
+
+    Args:
+        packets (list): List of packet objects from pyshark
+
+    Returns:
+        pd.DataFrame: DataFrame with basic features
+    """
+    logger.info("Extracting basic features from packets")
+    data =# Assign an empty list to data
+
+    for i, packet in enumerate(packets):
+        try:
                 # Initialize with default values
                 pkt_data = {
                     'timestamp': float(packet.sniff_time.timestamp()),

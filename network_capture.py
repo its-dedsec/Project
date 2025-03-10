@@ -1,6 +1,3 @@
-"""
-Module for capturing network traffic and saving to pcap files.
-"""
 import os
 import subprocess
 import datetime
